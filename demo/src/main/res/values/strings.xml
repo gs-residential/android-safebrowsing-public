@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SafeBrowsing demo</string>
+    <string name="safe_browsing_service_channel_name">Safe browsing</string>
+    <string name="safe_browsing_service_channel_description">On this channel you will be informed of malicious links detected when you are browsing</string>
+    <string name="safe_browsing_service_notification_title">Unsafe link detected!</string>
+    <string name="safe_browsing_service_notification_text">Our community has rated this site as untrusted. We do not recommend browsing this site: </string>
+
+    <string name="accessibility_service_title">[Here is title] Safe Browsing Service title</string>
+    <string name="accessibility_service_description">[Here is description] Safe Browsing Service desc</string>
+    <string name="accessibility_service_summary">[Here is summary] Safe Browsing Service summary</string>
+</resources>

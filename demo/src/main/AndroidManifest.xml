@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sclpfybn.safebrowsing">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.SafeBrowsingLib"
+        android:name="com.safebrowsing.demo.App">
+        <activity
+            android:name="com.safebrowsing.demo.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.safebrowsing.demo.TestSafeBrowsingService"
+            android:label="@string/accessibility_service_title"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!--mandatory items-->
+        <meta-data
+            android:name="sclpfybn_safebrowsing_panelId"
+            android:value="1" />
+        <meta-data
+            android:name="sclpfybn_safebrowsing_distributorId"
+            android:value="1" />
+        <meta-data
+            android:name="sclpfybn_safebrowsing_partnerId"
+            android:value="1" />
+        <!--optional item. Can use default value-->
+        <meta-data
+            android:name="sclpfybn_safebrowsing_endpoint"
+            android:value="https://cs.sclpfybn.com/api/rest/v2/secure/urls/checkSafety" />
+    </application>
+
+</manifest>
