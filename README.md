@@ -29,7 +29,7 @@ maven {
 3. Add the dependency:
 ```groovy
 dependencies {
-	implementation 'com.github.gs-residential:android-safebrowsing:1.0.2'
+	implementation 'com.github.gs-residential:android-safebrowsing:1.0.3'
 }
 ```
 
