@@ -35,7 +35,11 @@ dependencies {
 
 ### Proguard
 ```groovy
+-keepclasseswithmembers public class * extends android.app.Service
 -keep class com.sclpfybn.safebrowsing.detector.data.** { *; }
+-keep class com.sclpfybn.safebrowsing.monitoring.** { *; }
+-keep class com.sclpfybn.safebrowsing.SafeBrowsingHelper { *; }
+-keep class com.sclpfybn.safebrowsing.detector.SafeBrowseNotifier { *; }
 ```
 
 ### How to build
