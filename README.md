@@ -33,7 +33,7 @@ dependencies {
 }
 ```
 
-4. Proguard rules:
+### Proguard
 ```groovy
 -keep class com.sclpfybn.safebrowsing.detector.data.** { *; }
 ```
