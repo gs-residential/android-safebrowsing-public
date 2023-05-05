@@ -33,6 +33,11 @@ dependencies {
 }
 ```
 
+4. Proguard rules:
+```groovy
+-keep class com.sclpfybn.safebrowsing.detector.data.** { *; }
+```
+
 ### How to build
 1. Clone repo
 2. Open project
