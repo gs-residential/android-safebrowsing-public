@@ -2,7 +2,7 @@
 
 ### How to use
 Check demo app 🙂 and please note the following:
-1. Provide via AndroidManifest `meta-data`: `sclpfybn_safebrowsing_panelId`, `sclpfybn_safebrowsing_distributorId`, `sclpfybn_safebrowsing_partnerId`.
+1. Provide via AndroidManifest unless you have custom lib version `meta-data`: `sclpfybn_safebrowsing_distributorId`, `sclpfybn_safebrowsing_partnerId`.
 2. Provide optional via AndroidManifest `meta-data`: `sclpfybn_safebrowsing_endpoint`.
 3. Override string resources: `accessibility_service_title`, `accessibility_service_description`, `accessibility_service_summary`.
 Here means: just provide your own strings with the same names.
@@ -29,7 +29,7 @@ maven {
 3. Add the dependency:
 ```groovy
 dependencies {
-	implementation 'com.github.gs-residential:android-safebrowsing:1.0.5'
+	implementation 'com.github.gs-residential:android-safebrowsing:1.0.9'
 }
 ```
 
